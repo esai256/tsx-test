@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/esai256/tsx-test/issues"
   },
-  "homepage": "https://github.com/esai256/tsx-test#readme"
+  "homepage": "https://github.com/esai256/tsx-test#readme",
+  "dependencies": {
+    "@shyftplan/js-config": "^3.0.1"
+  }
 }
