@@ -1,0 +1,19 @@
+{
+  "name": "tsx-test",
+  "version": "0.0.1",
+  "description": "Trying a good way for using TypeScript with Vue and JSX. Especially trying to make use of interfaces",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esai256/tsx-test.git"
+  },
+  "author": "Elias Seichter (esai@posteo.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esai256/tsx-test/issues"
+  },
+  "homepage": "https://github.com/esai256/tsx-test#readme"
+}
