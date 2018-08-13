@@ -2,9 +2,10 @@
   "name": "tsx-test",
   "version": "0.0.1",
   "description": "Trying a good way for using TypeScript with Vue and JSX. Especially trying to make use of interfaces",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config ./config/webpack.config.js",
+    "start": "webpack-dev-server --hot --inline -d --config ./config/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,34 @@
     "url": "https://github.com/esai256/tsx-test/issues"
   },
   "homepage": "https://github.com/esai256/tsx-test#readme",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "dependencies": {
-    "@shyftplan/js-config": "^3.0.1"
+    "vue": "^2.5.9",
+    "vue-property-decorator": "^7.0.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@shyftplan/js-config": "^3.0.1",
+    "@vue/test-utils": "^1.0.0-beta.19",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "eslint": "^5.x",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.1.0",
+    "ts-loader": "^4.4.2",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.9.2",
+    "typescript": "^3.0.1",
+    "vue-loader": "^15.3.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.x",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
   }
 }
