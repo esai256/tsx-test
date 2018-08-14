@@ -1,9 +1,15 @@
 import Vue from 'vue';
 import TextComponent from './components/TextComponent';
+import 'babel-polyfill';
 
 function onDocumentReady() {
   return new Promise((resolve) => {
     document.addEventListener('DOMContentLoaded', () => {
+      const element = document.createElement('div');
+
+      element.setAttribute("id", "el");
+
+      document.documentElement.appendChild(element);
       resolve();
     });
   });
@@ -14,12 +20,11 @@ async function doThings() {
 
   new Vue({
     el: '#el',
-    components: {TextComponent},
+    components: { TextComponent },
     template: `
-      Dinge und Sachen
       <text-component></text-component>
     `
-  })
+  });
 }
 
 doThings();
