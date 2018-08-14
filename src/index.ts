@@ -1,5 +1,7 @@
 import Vue from 'vue';
 import TextComponent from './components/TextComponent';
+import EmailComponent from './components/EmailComponent';
+import ToggleComponent from './components/ToggleComponent';
 import 'babel-polyfill';
 
 function onDocumentReady() {
@@ -20,9 +22,17 @@ async function doThings() {
 
   new Vue({
     el: '#el',
-    components: { TextComponent },
+    components: {
+      TextComponent,
+      EmailComponent,
+      ToggleComponent
+    },
     template: `
-      <text-component></text-component>
+      <div>
+        <text-component></text-component>
+        <email-component></email-component>
+        <toggle-component></toggle-component>
+      <div>
     `
   });
 }
