@@ -1,5 +1,5 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { IInputComponent } from './IInputComponent';
+import IInputComponent from './IInputComponent';
 
 @Component
 export default class ToggleComponent extends Vue implements IInputComponent<boolean> {
